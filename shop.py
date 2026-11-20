@@ -30,3 +30,6 @@ def test_find_case_insensitive():
 
 def sort_by_price(products):
     return sorted(products, key=lambda p: p.price)
+
+def in_stock(stock, sku):
+    return stock.get(sku, 0) > 0
