@@ -27,3 +27,6 @@ def apply_coupon(price):
 
 def test_find_case_insensitive():
     assert [p.sku for p in find_by_name(products, "KEY")] == ["B2"]
+
+def sort_by_price(products):
+    return sorted(products, key=lambda p: p.price)
