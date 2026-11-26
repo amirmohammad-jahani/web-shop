@@ -41,6 +41,9 @@ def format_price(price):
 def list_names(products):
     return [p.name for p in products]
 
+def count_products(products):
+    return len(products)
+
 # test_stock.py
 from shop import in_stock
 stock = {"P001": 3, "P002": 0}
