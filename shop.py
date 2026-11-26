@@ -34,6 +34,9 @@ def sort_by_price(products):
 def in_stock(stock, sku):
     return stock.get(sku, 0) > 0
 
+def format_price(price):
+    return f"{price:,} Toman"
+
 
 # test_stock.py
 from shop import in_stock
