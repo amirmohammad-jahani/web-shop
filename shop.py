@@ -37,6 +37,8 @@ def in_stock(stock, sku):
 def format_price(price):
     return f"{price:,} Toman"
 
+def list_names(products):
+    return [p.name for p in products]
 
 # test_stock.py
 from shop import in_stock
