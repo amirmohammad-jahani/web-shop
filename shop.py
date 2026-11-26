@@ -17,6 +17,7 @@ def find_by_name(products, text):
 # A
 
 def apply_discount(price, percent):
+    percent = min(percent, 100)
     return price * (100 - percent) / 100
 
 def add_tax(price, rate=0.15):
